@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation of tickets</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            font-family: sans-serif;
+            background: url('6069388.jpg') no-repeat;
+            background-size:cover;
+        }
+        h2 {
+            padding-top: 30px;
+            color: rgb(14, 15, 15);
+            font-size: 6vh;
+            font-weight: bold;
+            
+        }
+        .details {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+     margin-top: 4%;
+     margin-left: 3%;       
+  }
+  .details .info {
+    position: relative;
+  }
+  .details .info input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  .details .info label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s ease ease-in;
+  }
+  .details .info input:focus + label,
+  .details .info input:valid + label {
+    transform: translateY(-18px);
+    color: #ffffff;
+    font-size: .8rem;
+  }
+  .button {
+  border-radius: 8px;
+  color: rgb(26, 26, 26);
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 12px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button1 {background-color:  rgb(117, 142, 255);}
+.button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+} 
+    </style>
+</head>
+<body>
+    <h2>TICKET CANCELLATION</h2>
+    <div class="d">
+    <form action="cancelend.php" class="details" method="post">
+    <div class="info">
+    <input type="number" name="pnr">
+    <label for="PNR Number">PNR Number</label>
+     
+</div>
+
+<br>
+
+<div class="Rule">
+    <input type="checkbox" name="cancellation">
+    <label for="cancellation" >I have read cancellation procedure and its rule
+
+    </label>
+</div>
+<br>
+<div>
+    <button class="button button1">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>

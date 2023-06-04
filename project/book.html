@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railway Tickets</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           text-align: center;
+       }
+       body{
+           font-family: sans-serif;
+           background: url('6069388.jpg') no-repeat;
+           background-size: cover;
+       }
+       h2 {
+           padding-top: 30px;
+           color: rgb(14, 15, 15);
+           font-size: 6vh;
+           font-weight: bold;
+           
+       }
+       .details {
+   position: relative;
+   width: 100%;
+   max-width: 380px;
+   padding: 80px 40px 40px;
+   background: rgba(0,0,0,0.7);
+   border-radius: 10px;
+   color: #fff;
+   box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    margin-top: 4%; 
+    margin-left: 3%;      
+ }
+ .details .info label{
+   font-size:  14px;
+   font-weight: bold;
+   color: rgb(254, 247, 247);
+   font-family: 'Times New Roman', Times, serif;
+   text-align: left;
+   float: left;
+ }
+       .button {
+ border-radius: 8px;
+ color: rgb(26, 26, 26);
+ padding: 12px 12px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 15px;
+ margin: 12px 2px;
+ cursor: pointer;
+ font-weight: bold;
+}
+.button1 {background-color:  rgb(117, 142, 255);}
+.button:active {
+ box-shadow: 0 3px #666;
+ transform: translateY(4px);
+} 
+   </style>
+</head>
+<body>
+    <h2>BOOK TICKETS</h2>
+    <div class="details">
+    <form action="bookend.php" method="post">
+        
+        <div class="info">
+            <label for="station">SOURCE STATION</label>
+        <select name="source station" id="station">
+            <option value="--select--">--select--</option>
+            <option value="Mumbai Central">Mumbai Central</option>
+            <option value="NEW DELHI">New Delhi</option>
+            <option value="PRAYAGRAJ JN">Prayagraj Jn</option>
+            <option value="CHENNAI CENTRAL">Chennai Central</option>
+            <option value="Jammu">Jammu</option>   
+            </select>
+        </div>
+        <br>
+        <div class="info">
+            <label for="station">DESTINATION STATION</label>
+            <select name="destination station" id="station">
+                <option value="--select--">--select--</option>
+            <option value="Mumbai Central">Mumbai Central</option>
+            <option value="NEW DELHI">New Delhi</option>
+            <option value="PRAYAGRAJ JN">Prayagraj Jn</option>
+            <option value="CHENNAI CENTRAL">Chennai Central</option>
+            <option value="Jammu">Jammu</option>  
+                
+            </select>
+        </div>
+        <br>
+        <div class="info">
+            <input type="date" name="travel date">
+            <label for="travel date">JOURNEY DATE</label>
+        </div>
+        <br>
+        <div class="info">
+            <label for="class">CLASS</label>
+            <select name="class" id="class">
+                
+                <option value="--select--">--select--</option>
+                <option value="2s">Second Class</option>
+                <option value="Sleeper Class">Sleeper Class</option>
+                <option value="3s">Third Class</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <button class="button button1">Pay</button>
+
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Reservation System</title>
+  
+    <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #nb{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  float: right;
+}
+
+#nb::before{
+    content: "";
+    background-color: rgb(254, 252, 252);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0;
+}
+  #nb ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+  border-radius: 8px ;
+  
+}
+#nb ul li:hover{
+  background-color:rgb(117, 142, 255);
+}
+#nb ul li a{
+  text-decoration: none;
+  color: rgb(251, 250, 252);
+  padding :30px;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 30px;
+    height: 700px;
+    justify-content: left;
+    align-items: left;
+}
+
+.home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bg3.jpg') no-repeat center center/cover;
+    height: 700px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.home .text-block {
+  position: relative;
+  color: white;
+  font-size: 2.5rem;
+  top :140px;
+  padding-left: 0px;
+}
+#features{
+    margin: 0px;
+    display: flex;
+    
+}
+#container{
+  background-color: rgb(205, 235, 255);
+  margin-top: 0px;
+}
+#container h1{
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #050505;
+}
+#features .box{ 
+    border: 2px solid rgb(23, 1, 80);
+    padding: 30px;
+    padding-right: 40px;
+    margin: 2px 20px;
+    border-radius: 8px;
+    background: #e7f4fa;
+    margin-bottom: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+#features .box p{
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+#features .button {
+  border-radius: 8px;
+  color: rgb(23,1,80);
+  padding: 9px 9px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 12px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: center;
+  align-content: center;
+}
+  .button1 {background-color: rgb(139, 160, 253);}
+
+  footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}
+
+    </style>
+    
+</head>
+<body>
+    
+      
+        <nav id="nb">   
+            <ul class="navbar">
+              <li> <a href="#">Home</a></li>
+                <li> <a href="signup.html">Sign Up</a></li>
+                <li> <a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="home">
+          <div class="text-block">
+            <h1>INDIAN RAILWAYS</h1>
+            <p>Connecting India...</p>
+          </div>
+        </div>
+        <section id="container">
+          <h1>FEATURES</h1>
+          <div id="features">
+              <div class="box">
+                  <h2 class="h-secondary center">Train Enquiry</h2>
+                  <p>Know about your train</p>
+                    <button class="button button1"><a href="enquiry.php">ENQUIRE</a></button>
+                
+              </div>
+              <div class="box">
+                  <h2 class="h-secondary center">PNR Status</h2>
+                  <p class="center">Check status of your seat before traveling  </p>
+                  <button class="button button1"><a href="pnr.php">CHECK</a></button>
+              </div>
+              <div class="box">
+                  <h2 class="h-secondary center">Ticket Booking</h2>
+                  <p class="center">Want to explore India?Book tickets now!</p>
+                  <button class="button button1" button onclick="popUp()">BOOK</button>
+                  <script>
+                    function popUp(){
+                      alert("Sorry! Dear Passenger please login first");
+                    }
+                  </script>
+              </div>
+              <div class="box">
+                <h2 class="h-secondary center">Ticket Cancellation</h2>
+                <p class="center">Now cancel your tickets with just one click!</p>
+                <button class="button button1"button onclick="popUp()">CANCEL</button>
+                <script>
+                    function popUp(){
+                      alert("Sorry! Dear Passenger please Login  first");
+                    }
+                  </script>
+            </div>
+        
+      </section>
+      <footer>
+        <div class="center">
+          Copyright &copy; www.IndianRailwayReservation.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

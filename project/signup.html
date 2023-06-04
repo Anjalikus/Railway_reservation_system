@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: url('bg2.jpeg') no-repeat center;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+   .register-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left: 15px;
+  }
+  .register-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 2px 0px 2px 15px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+  .register-wrapper::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255, 0.08);
+    transform: skewX(-26deg);
+    transform-origin: bottom left;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+  .register-wrapper h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    color: #fbf9f8;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-weight: bolder;
+  }
+  .register-wrapper .input-group {
+    position: relative;
+  }
+  .register-wrapper .input-group input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  .register-wrapper.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s ease ease-in;
+  }
+  .register-wrapper .input-group input:focus + label,
+  .register-wrapper .input-group input:valid + label {
+    transform: translateY(-18px);
+    color: #ff652f;
+    font-size: .8rem;
+  }
+  .button {
+  border-radius: 8px;
+  color: rgb(26, 26, 26);
+  padding: 9px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 12px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+        .button1 {background-color: rgb(117, 142, 255);} 
+
+    </style>
+</head>
+<body>
+    <div class="register-wrapper">
+        
+    <form action="signupend.php" method="post">
+      <h3>REGISTRATION FORM</h3>
+    <div class="input-group">
+        First Name: <input type="text" id="first_n" name="First Name">
+    </div>
+    <br>
+    <div class="input-group">
+        Last Name: <input type="text" id="last_n"  name="Last Name">
+    </div>
+    <br>
+    <div class="input-group">
+        Password: <input type="password" id="password" name="Password">
+    </div>
+    <br>
+    <div class="input-group">
+        Confirm Password: <input type="password" id="cpassword" name="Confirm Password">
+    </div>
+    <br>
+    <div class="input-group">
+        Email: <input type="email" id="email" name="Email">
+    </div>
+    <br>
+    <div class="input-group">
+        Phone: <input type="text" id="phone" name="Phone">
+    </div>
+    <br>
+    <div class="input-group">
+       Gender:<input type="text" id="gender" name="gender">
+    </div>
+    <br>
+    <div class="input-group">
+        Date of birth: <input type="date"  id="db" name="Date of birth">
+    </div>
+    <br>
+    <div>
+        <button class="button button1">Sign Up</button>
+    </div>
+    </form>
+    </div>
+    
+  </body>  
+
+</html>
